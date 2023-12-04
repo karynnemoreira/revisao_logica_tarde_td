@@ -46,64 +46,162 @@
 
 //TIPOS DE VARIÁVEIS
 
-//number
-let ano = 2023 // tupe number (tipo de variável numérica) 
+// //number
+// let ano = 2023 // tupe number (tipo de variável numérica) 
 
-//string (tipo textual) o valor é declarado entre "" , ' ' ou ``
-let mes = "dezembro" // string- tipo textual
-let dia = 'sexta' //string - tipo textual
-let frase = `Natal está chegando` //string - tipo textual
+// //string (tipo textual) o valor é declarado entre "" , ' ' ou ``
+// let mes = "dezembro" // string- tipo textual
+// let dia = 'sexta' //string - tipo textual
+// let frase = `Natal está chegando` //string - tipo textual
 
-//Boolean - Verdadeiro ou falso
-let feliz = true
-let triste = false
+// //Boolean - Verdadeiro ou falso
+// let feliz = true
+// let triste = false
 
-//Vamos ver com calma com o tempo
-let teste = null //valor nulo
-let teste2 = undefined //valor indefinido 
-let teste3 = NaN //Não é um valor numérico
+// //Vamos ver com calma com o tempo
+// let teste = null //valor nulo
+// let teste2 = undefined //valor indefinido 
+// let teste3 = NaN //Não é um valor numérico
 
-console.log(typeof feliz)//informa o tipo da variável
+// console.log(typeof feliz)//informa o tipo da variável
 
-//TemplateString, também é uma string, porém, ela é mais robusta, elegante. Conseguimos guardar mais informações ou chamar de uma outra forma. Ela é chamada com crase ``
-//Forma de chamar o templateString  `${}`
-
-
-//Aqui estou guardando informações com conteúdos de outras variáveis
-
-let fraseGrande = `Hoje é ${dia} do mês de ${mes} de ${ano} , O ${frase}`
-
-console.log(fraseGrande)
-
-//Aqui não estou guardando nada, o console só mostra uma mensagem
-console.log (`Hoje iniciou o mês de ${mes}`)
+// //TemplateString, também é uma string, porém, ela é mais robusta, elegante. Conseguimos guardar mais informações ou chamar de uma outra forma. Ela é chamada com crase ``
+// //Forma de chamar o templateString  `${}`
 
 
-//CONDIÇÕES
-//IF = SE
-//ELSE = SENÃO
-//ELSE IF = SENÃO SE (usado para nos dar mais opções de escolha)
+// //Aqui estou guardando informações com conteúdos de outras variáveis
+
+// let fraseGrande = `Hoje é ${dia} do mês de ${mes} de ${ano} , O ${frase}`
+
+// console.log(fraseGrande)
+
+// //Aqui não estou guardando nada, o console só mostra uma mensagem
+// console.log (`Hoje iniciou o mês de ${mes}`)
 
 
-let a = 3 > 2 //false
-
-if(a == false) { // a = false 
- console.log("Essa condição é verdadeira")   
-} else {
-    console.log("Essa informação não bate")
-}
+// //CONDIÇÕES
+// //IF = SE
+// //ELSE = SENÃO
+// //ELSE IF = SENÃO SE (usado para nos dar mais opções de escolha)
 
 
-let estiloMusical = "axé" //imagine o usuário digitando um estilo musical
+// let a = 3 > 2 //false
+
+// if(a == false) { // a = false 
+//  console.log("Essa condição é verdadeira")   
+// } else {
+//     console.log("Essa informação não bate")
+// }
 
 
-if(estiloMusical === "rock"){
-console.log("O estilo musical é Rock")
-} else if (estiloMusical === "sertanejo"){
-console.log("O estilo musical é sertanejo")
-} else if(estiloMusical === "funk"){
-console.log("O estilo musical é funk")
+// let estiloMusical = "axé" //imagine o usuário digitando um estilo musical
+
+
+// if(estiloMusical === "rock"){
+// console.log("O estilo musical é Rock")
+// } else if (estiloMusical === "sertanejo"){
+// console.log("O estilo musical é sertanejo")
+// } else if(estiloMusical === "funk"){
+// console.log("O estilo musical é funk")
+// } else{
+//     console.log("Estilo musical não encontrado")
+// }
+
+
+//OPERADORES LÓGICOS
+
+// && (and / e)  COMPARA SE AS DUAS INFORMAÇÕES SÃO VERDADEIRA,ELAS PRECISAM SER VERDADEIRAS PARA CAIR NO IF.
+//um E o outro precisar ser true/verdade
+
+//Exemplo 1 - boolean
+// let a = false  
+// let b = false 
+
+// if (a === true && b === false ){
+// console.log( "tudo certo") 
+// } else{
+//     console.log("Existe alguma informação falsa")
+// }
+
+
+// //Exemplo 2 - strings
+
+// let animal1 = "galinha"
+// let animal2 = "papagaio"
+
+// //galinha é diferente != de cachorro? SIM. papagaio é diferente != de papagaio? NÃO. Uma informação é verdadeira e a outra é falsa, por isso caiu no else. 
+// if(animal1 != "cachorro" && animal2 != "papagaio"){
+// console.log("As duas informações estão corretas")
+// }else{
+//     console.log("Tem informação errada aí ")
+// }
+
+// == só pra comparar o valor da variável, ex? "cachorro", "gato", "Rihanna", 20, true, false...
+// === comparar o valor e o tipo, se é  "cachorro" e string; se é 20 e number, se é true e boolean; 
+
+
+// || OR/OU  Comparar se um OU o outro são verdadeiros
+
+// let fruta1 = "morango"
+// let fruta2 = "abacaxi"
+
+// if(fruta1 === "uva" || fruta2 === "abacaxi"){
+// console.log(`Amo essas frutas ${fruta1} e ${fruta2}`)
+// }
+
+// //exemplo com carro
+
+// let carro1 = "gol"
+// let carro2 = "celta"
+
+// if(carro1 === "gol" || carro2 === "strada"){
+// console.log("Um ou/e o outro então corretos")
+// }else{
+//     console.log("Nenhum dos dois carros estão certos")
+// }
+
+
+// // ! not : inverte um valor que é dado a ele 
+// let segunda = true
+// console.log(!segunda)
+
+
+//Exemplo 
+
+let cantora = "Mariah Carey"
+let mes = "Dezembro"
+let cantor = "Roberto Carlos"
+let natal = `Ano novo em Copacabana com participação especial da cantora ${cantora} e ${cantor}`
+
+
+if(mes === "Novembro" || cantora === "Mariah Carey" || cantor != "Roberto Carlos"){
+console.log(`Natal está chegando, vamos descongelar a  ${cantora} e partiu cruzeiro do ${cantor} `)
 } else{
-    console.log("Estilo musical não encontrado")
+    console.log(`Estamos longe do natal que é no mês de ${mes}`)
 }
 
+//OPERADORES DE ATRIBUIÇÃO
+
+// = ATRIBUIÇÃO DE TIPO 
+// + ATRIBUIÇÃO DE SOMA  +=
+// - ATRIBUIÇÃO DE SUBTRAÇÃO -= 
+// * ATRIBUIÇÃO DE MULTIPLICAÇÃO *=
+// / ATRIBUIÇÃO DE DIVISÃO /=
+// ++ ATRIBUI UM INCREMENTO (ADICIONA 1 VALOR)
+// -- ATRIBUI UM DECREMENTO (RETIRA 1 VALOR)
+// % ATRIBUIÇÃO DE RESTO %= (VAMOS VER COM O TEMPO)
+
+let x = 1 
+let y = 2
+
+//SOMAR
+//console.log(x=x+1) //Forma mais completa de somar
+//console.log(x+=1) //Forma mais simplificada de somar
+
+//SUBTRAIR
+//console.log(x=x-y) //(x=1-2) //Forma mais completa de subtrair
+//console.log(x-=y) //Forma mais simplificada de subtrair
+
+//MULTIPLICAR
+console.log(x=x*y) //2
+console.log(x*=y) //2*2 
