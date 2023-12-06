@@ -168,17 +168,17 @@
 
 //Exemplo 
 
-let cantora = "Mariah Carey"
-let mes = "Dezembro"
-let cantor = "Roberto Carlos"
-let natal = `Ano novo em Copacabana com participação especial da cantora ${cantora} e ${cantor}`
+// let cantora = "Mariah Carey"
+// let mes = "Dezembro"
+// let cantor = "Roberto Carlos"
+// let natal = `Ano novo em Copacabana com participação especial da cantora ${cantora} e ${cantor}`
 
 
-if(mes === "Novembro" || cantora === "Mariah Carey" || cantor != "Roberto Carlos"){
-console.log(`Natal está chegando, vamos descongelar a  ${cantora} e partiu cruzeiro do ${cantor} `)
-} else{
-    console.log(`Estamos longe do natal que é no mês de ${mes}`)
-}
+// if(mes === "Novembro" || cantora === "Mariah Carey" || cantor != "Roberto Carlos"){
+// console.log(`Natal está chegando, vamos descongelar a  ${cantora} e partiu cruzeiro do ${cantor} `)
+// } else{
+//     console.log(`Estamos longe do natal que é no mês de ${mes}`)
+// }
 
 //OPERADORES DE ATRIBUIÇÃO
 
@@ -191,17 +191,129 @@ console.log(`Natal está chegando, vamos descongelar a  ${cantora} e partiu cruz
 // -- ATRIBUI UM DECREMENTO (RETIRA 1 VALOR)
 // % ATRIBUIÇÃO DE RESTO %= (VAMOS VER COM O TEMPO)
 
-let x = 1 
-let y = 2
+// let precoTotal = 5 
 
-//SOMAR
-//console.log(x=x+1) //Forma mais completa de somar
-//console.log(x+=1) //Forma mais simplificada de somar
+// let precoTotal2 = 5
 
-//SUBTRAIR
-//console.log(x=x-y) //(x=1-2) //Forma mais completa de subtrair
-//console.log(x-=y) //Forma mais simplificada de subtrair
+// //Soma
+// console.log(precoTotal = precoTotal + 13) //completa
+// console.log(precoTotal += 18) //simplicada
 
-//MULTIPLICAR
-console.log(x=x*y) //2
-console.log(x*=y) //2*2 
+// //Subtração
+// console.log(precoTotal = precoTotal - 23) //completa
+// console.log(precoTotal -= 44) //simplicada
+
+// //Multiplicação
+// console.log(precoTotal2 = precoTotal2 * 39) //completa
+// console.log(precoTotal2 *= 7) //simplicada
+
+// //Divisão
+// console.log(precoTotal = precoTotal / 22) //completa
+// console.log(precoTotal /= 97) //simplicada
+
+
+//let num = 10 
+
+//console.log(num)
+//console.log(num + 28)
+
+//console.log(num = num - 44)
+
+//console.log(num = num * 9)
+
+//console.log(num = num / 4)
+
+//console.log(num += 7) //simplificada
+
+
+//------LOOPS---------
+//LOOPS: SÃO LAÇOS DE REPETIÇÕES, EXECUTAR UMA TAREFA DIVERSAS VEZES.
+
+//IMAGINE UM CONTADOR FEITO DE FORMA MANUAL CONTANDO DE 1 ATÉ 10. 
+
+let contador = 0
+
+// console.log(contador = contador + 1)
+// console.log(contador = contador + 1)
+// console.log(contador = contador + 1)
+// console.log(contador = contador + 1)
+// console.log(contador = contador + 1)
+// console.log(contador = contador + 1)
+// console.log(contador = contador + 1)
+// console.log(contador = contador + 1)
+// console.log(contador = contador + 1)
+// console.log(contador = contador + 1)
+
+
+//while (enquanto) Execute o loop enquanto a condição for verdadeira.
+
+// while(condição){
+// tarefa
+// iteração
+// }
+
+//EXEMPLO 1
+// let contador2 = 0
+// //Contador2 é menor que é 10? É!! Então execute isso {} 
+// while (contador2 < 100) {
+//     contador2++
+//     console.log(`Número: ${contador2}`)
+// }
+
+// ++ incremento, pega o valor atual e some 1 valor
+// -- decremento, pega o valor atual e retire 1 valor
+
+//EXEMPLO 2
+// let contandoPares = 20
+
+// while (contandoPares < 50) {
+//     contandoPares += 2 //execute isso
+//     console.log(contandoPares) // mostrar o valor atual no console.log
+// }
+
+//EXEMPLO 3 
+
+// let contandoImpares = 3
+// while (contandoImpares < 50) {
+//     contandoImpares += 3
+//     console.log(contandoImpares)
+// }
+
+//EXEMPLO 4
+//DEFININDO AUMENTO DE SALÁRIO
+
+// let salario = 1000 
+// while(salario < 3000){
+// salario += 100 //O salário vai ser somado de 100 em 100 até chegar os 3000
+// console.log(` O salário é R$ ${salario}`)
+// }
+
+//EXEMPLO 5 
+let numero = 4
+
+while(numero < 50){
+numero *= 3    
+//numero = 4, * 3 = 12 é menor que 50? É, então execute.
+//numero = 12, * 3 = 36 é menor que 50? É, então execute.
+//numero = 36, *3 = 108 //108 é menor que 50? Não! então pare por aí.
+console.log(numero)
+}
+
+//---------FOR
+// For: Executa o loop enquanto a condição for verdadeira, porém,você pode colocar as variáveis dentro da estrutura. No FOR o ponto er vírgula é obrigatório após cada valor. As  chaves {} são opcionais. 
+
+//Estrutura do for
+
+
+// for(variavel; condição; iteração){
+//     tarefa
+// }
+
+for(let i = 1; i <= 10; i++){
+console.log(i)
+}
+
+//Números pares de 0 a 20 usando o FOR
+for(let j = 0; j <= 20; j+=2){
+console.log(j)
+}
