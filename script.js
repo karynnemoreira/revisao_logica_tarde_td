@@ -289,15 +289,15 @@ let contador = 0
 // }
 
 //EXEMPLO 5 
-let numero = 4
+// let numero = 4
 
-while(numero < 50){
-numero *= 3    
-//numero = 4, * 3 = 12 é menor que 50? É, então execute.
-//numero = 12, * 3 = 36 é menor que 50? É, então execute.
-//numero = 36, *3 = 108 //108 é menor que 50? Não! então pare por aí.
-console.log(numero)
-}
+// while(numero < 50){
+// numero *= 3    
+// //numero = 4, * 3 = 12 é menor que 50? É, então execute.
+// //numero = 12, * 3 = 36 é menor que 50? É, então execute.
+// //numero = 36, *3 = 108 //108 é menor que 50? Não! então pare por aí.
+// console.log(numero)
+// }
 
 //---------FOR
 // For: Executa o loop enquanto a condição for verdadeira, porém,você pode colocar as variáveis dentro da estrutura. No FOR o ponto er vírgula é obrigatório após cada valor. As  chaves {} são opcionais. 
@@ -310,10 +310,57 @@ console.log(numero)
 // }
 
 for(let i = 1; i <= 10; i++){
-console.log(i)
+//console.log(i)
 }
 
-//Números pares de 0 a 20 usando o FOR
-for(let j = 0; j <= 20; j+=2){
-console.log(j)
+
+for(let k = 0; k <= 100; k += 10 ){
+//console.log(k)
+}
+
+
+
+//exemplo com while, variável FORA do bloco
+let m = 2
+
+while(m <= 10){
+m++
+//console.log(m)
+}
+
+
+
+//CUIDADOOO!! Esse código será executado eternamento, ou seja, loop infinito. 
+
+for(let batata = 1; batata < 10; batata++){
+//console.log(batata)
+}
+
+
+// //Números pares de 0 a 20 usando o FOR
+// for(let j = 0; j <= 20; j+=2){
+// console.log(j)
+// }
+
+//------------If Else Else If
+
+//If: SE (Se a informação for verdadeira, faça isso)
+
+//else if: senão se (Usado para nos dar mais opções de escolha)
+
+//else: Senão (Se todas as informações forem falsas, cai no else)
+
+
+
+let numeroDaSorte = 14
+
+
+if(numeroDaSorte === 78){
+console.log("Parabéns, você foi o primeiro sorteado")
+} else if(numeroDaSorte === 21){
+    console.log("Parabéns, você foi o segundo sorteado")
+} else if(numeroDaSorte === 45){
+console.log("Parabéns, você foi o terceiro sorteado")
+} else{
+    console.log("Hoje não é o seu dia de sorte")
 }
